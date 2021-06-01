@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * 
+ * CASE: Computer Aided Software Engineering
  */
 public class Sonata {
 
@@ -10,6 +10,7 @@ public class Sonata {
      * Default constructor
      */
     public Sonata() {
+	this.speed=0;
     }
 
     /**
@@ -22,13 +23,15 @@ public class Sonata {
      */
     public void start() {
         // TODO implement here
+	return this.speed
     }
 
     /**
      * 
      */
-    public void getSpeed() {
+    public int getSpeed() {
         // TODO implement here
+	return this.speed;
     }
 
     /**
@@ -36,6 +39,7 @@ public class Sonata {
      */
     public void accelerate() {
         // TODO implement here
+	this.speed = this.speed +30;
     }
 
     /**
@@ -43,6 +47,7 @@ public class Sonata {
      */
     public void stop() {
         // TODO implement here
+	this.speed = 0;
     }
 
 }
